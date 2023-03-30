@@ -2,6 +2,7 @@ import time
 from turtle import Screen
 from paddle import Paddle
 from ball import Ball
+from blocks import Blocks
 
 screen = Screen()
 screen.setup(800, 1000)
@@ -11,6 +12,8 @@ screen.tracer(0)
 
 paddle = Paddle((0, -400))
 ball = Ball()
+
+blocks = Blocks()
 
 screen.listen()
 screen.onkeypress(paddle.move_right, 'Right')

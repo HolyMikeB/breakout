@@ -9,6 +9,7 @@ class Ball(Turtle):
         self.x_move = 10
         self.y_move = 10
         self.move_speed = 0.05
+        self.goto(0, 0)
 
     def create_ball(self):
         self.shape("circle")
@@ -26,7 +27,6 @@ class Ball(Turtle):
 
     def paddle_bounce(self):
         self.y_move *= -1
-        self.move_speed *= 0.9
 
     def ceiling_bounce(self):
         self.y_move *= -1
