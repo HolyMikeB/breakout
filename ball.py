@@ -8,7 +8,7 @@ class Ball(Turtle):
         self.create_ball()
         self.x_move = 10
         self.y_move = 10
-        self.move_speed = 0.05
+        self.move_speed = 0.02
         self.goto(0, 0)
 
     def create_ball(self):
@@ -19,7 +19,7 @@ class Ball(Turtle):
 
     def reset_ball(self):
         self.reset()
-        self.move_speed = 0.05
+        self.move_speed = 0.02
         self.create_ball()
 
     def wall_bounce(self):
