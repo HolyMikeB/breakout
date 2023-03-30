@@ -39,7 +39,7 @@ while len(blocks.blocks) > 0 and scoreboard.lives > 0:
     if ball.distance(paddle) < 50 and ball.ycor() < -270:
         ball.paddle_bounce()
     for block in blocks.blocks:
-        if ball.distance(block) < 50:
+        if ball.distance(block) < 30:
             ball.ceiling_bounce()
             block.hideturtle()
             blocks.blocks.remove(block)
